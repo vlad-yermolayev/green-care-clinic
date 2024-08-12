@@ -1,0 +1,144 @@
+* {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0e8ff;
+}
+
+main {
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.github-search {
+    width: 100%;
+}
+
+.github-search__top h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 5px;
+}
+
+.form-group input {
+    min-height: 38px;
+    width: 100%;
+    border: 1px solid #d6d8db;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:hover {
+    border-color: #1b1096;
+}
+
+.form-group button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #1b1096;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.form-group button:hover {
+    color: #1b1096;
+    border-color: #1b1096;
+    background-color: #fff;
+}
+
+.github-search__bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.github-search__bottom h2 {
+    margin-bottom: 10px;
+}
+
+.github-search__results {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.github-search__no-results {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    padding: .75rem 1.25rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card__avatar {
+    display: flex;
+}
+
+.card__avatar img {
+    border-radius: 50%;
+    border: 2px solid #1b1096;
+    height: 150px;
+    width: 150px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__info h3 a {
+    color: #000;
+}
+
+.card__info ul {
+    display: flex;
+    gap: 10px;
+}
+
+.card__info li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.card__info strong {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 500px) {
+    .card {
+        flex-direction: row;
+    }
+}

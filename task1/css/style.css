@@ -1,0 +1,84 @@
+* {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0e8ff;
+}
+
+main {
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.bmi-caltulcator {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bmi-caltulcator__top {
+    background-color: #1b1096;
+    padding: 20px 15px;
+}
+
+.bmi-caltulcator__top h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bmi-caltulcator__bottom {
+    padding: 25px 15px;
+    background-color: #fff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.form-group input {
+    cursor: pointer;
+    margin: 0;
+}
+
+.bmi-caltulcator__output-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bmi-caltulcator__text {
+    font-weight: 500;   
+}
+
+.bmi-caltulcator__output {
+    min-height: 38px;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #1b1096;
+    color: #fff;
+}
